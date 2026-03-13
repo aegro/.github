@@ -8,6 +8,8 @@ Arquivos definidos aqui são herdados por todos os repos da org que não possuem
 
 | Arquivo | Tipo | Descrição |
 |---------|------|-----------|
+| `profile/README.md` | Org profile | Vitrine pública da org no GitHub |
+| `CONTRIBUTING.md` | Contributing guide | Guia de contribuição herdado por todos os repos |
 | `.github/PULL_REQUEST_TEMPLATE.md` | PR template | Template padrão para pull requests |
 | `.github/ISSUE_TEMPLATE/bug.yml` | Issue template | Bug — tipo `Bug` |
 | `.github/ISSUE_TEMPLATE/feature.yml` | Issue template | Feature — tipo `Feature` |
