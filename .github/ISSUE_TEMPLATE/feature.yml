@@ -1,0 +1,25 @@
+name: Feature
+description: Melhoria ou capacidade nova
+type: Feature
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivação
+      description: Qual problema resolve ou que valor agrega?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: O que fazer? (pode ser só a ideia, não precisa ser solução completa)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: RFC relacionada, links, screenshots
+    validations:
+      required: false

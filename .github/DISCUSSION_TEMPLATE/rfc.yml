@@ -1,0 +1,47 @@
+title: "RFC: [Título da Proposta]"
+labels: ["rfc"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Instruções
+        Use este template para propor mudanças técnicas significativas (código, arquitetura ou processos).
+        Consulte o [Processo de Decisões Técnicas](https://docs.aegro.io/meta/decisions-process) para detalhes.
+  - type: textarea
+    id: resumo
+    attributes:
+      label: Resumo
+      description: "Descrição da proposta em 2-3 frases"
+    validations:
+      required: true
+  - type: textarea
+    id: motivacao
+    attributes:
+      label: Motivação
+      description: "Por que essa mudança é necessária? Qual problema resolve?"
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: Design Proposto
+      description: "Descrição técnica detalhada da solução proposta"
+    validations:
+      required: true
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Impacto
+      description: "Repositórios afetados, squads impactados, riscos"
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas Consideradas
+      description: "Outras opções avaliadas e por que foram descartadas"
+  - type: textarea
+    id: perguntas
+    attributes:
+      label: Perguntas em Aberto
+      description: "Dúvidas que precisam ser respondidas antes da decisão"

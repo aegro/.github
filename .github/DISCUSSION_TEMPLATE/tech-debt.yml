@@ -1,0 +1,41 @@
+title: "TD: [Título do Débito]"
+labels: ["tech-debt"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Instruções
+        Use este template para registrar uma dívida técnica reconhecida.
+        Consulte o [Processo de Decisões Técnicas](https://docs.aegro.io/meta/decisions-process) para detalhes.
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: "Como o débito surgiu e por que existe"
+    validations:
+      required: true
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Impacto
+      description: "O que esse débito causa no dia-a-dia"
+    validations:
+      required: true
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Solução Ideal
+      description: "O que seria feito para resolver"
+    validations:
+      required: true
+  - type: textarea
+    id: bloqueios
+    attributes:
+      label: Bloqueios
+      description: "O que impede de resolver agora (se houver)"
+  - type: input
+    id: jira
+    attributes:
+      label: Ticket Jira
+      description: "Ticket Jira relacionado (se houver)"
+      placeholder: "AEGRO-XXXX"

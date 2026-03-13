@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "RFC — Proposta técnica"
+    url: https://github.com/aegro/docs/discussions/new?category=rfc
+    about: "Para propostas que precisam de discussão antes de implementar"
+  - name: "Tech Debt — Dívida técnica"
+    url: https://github.com/aegro/docs/discussions/new?category=tech-debt
+    about: "Para dívidas técnicas reconhecidas"
