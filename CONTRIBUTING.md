@@ -80,6 +80,8 @@ Significant changes follow a structured process:
 
 Not every decision needs an RFC. Use your judgment — the bigger the impact, the more discussion it deserves. When in doubt, document it.
 
+> **Setup:** as categorias "RFC" e "Tech Debt" precisam ser criadas manualmente em cada repo (Settings → Discussions). Os templates de Discussion deste repo (`rfc.yml`, `tech-debt.yml`) são herdados automaticamente, mas só aparecem se a categoria correspondente existir.
+
 See [Technical Decisions](https://docs.aegro.io/guides/development/decisions) for the full process.
 
 ## Conventions
