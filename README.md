@@ -66,6 +66,7 @@ O diretório `recommended/` contém configs de referência para novos repos:
 |---------|-----------|
 | `recommended/.editorconfig` | Indentação e encoding padrão por linguagem |
 | `recommended/.gitattributes` | Normalização de line endings e classificação de binários |
+| `recommended/.gitignore` | Ignores padrão + negações explícitas para configs de agentes IA |
 
 Copie para a raiz do seu repo e ajuste conforme necessário.
 
