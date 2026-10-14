@@ -31,7 +31,7 @@ Feature/fix branches follow the naming convention:
 | Hotfix | `hotfix/<n>-<description>` | `hotfix/5678-fix-cost-calc` |
 | Experimental | `experimental/<description>` | `experimental/graphql-gateway` |
 
-In the first two rows, `<type>` is one of the [commit prefixes](#commits) below; `<n>` is the number of the GitHub issue that tracks the work (it may live in another repo, such as `aegro/workspace`); and `<description>` is short, in English kebab-case.
+`<type>` is one of the [commit prefixes](#commits) below, without the colon; `<n>` is the number of the GitHub issue that tracks the work (it may live in another repo, such as `aegro/workspace`); and `<description>` is short, in English kebab-case.
 
 Always branch from `dev` for regular work. Hotfixes branch from `production`.
 
