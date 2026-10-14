@@ -1,0 +1,42 @@
+name: Defeito
+description: Comportamento divergente do esperado, detectado internamente
+type: Defeito
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ### Preencha em Fields, no painel à direita →
+        > `Squad`
+
+        > [!NOTE]
+        > Erro **relatado por cliente** não é `Defeito`: é `Ticket de Suporte`, aberto em
+        > `aegro/workspace`. `Defeito` é **raiz** da árvore — não é filha de ninguém — e as `Tarefa`
+        > que o consertam penduram nele como sub-issues.
+
+  - type: textarea
+    id: esperado-vs-obtido
+    attributes:
+      label: O que era esperado e o que aconteceu
+    validations:
+      required: true
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Como reproduzir
+      description: >-
+        Passo a passo. Sem reprodução, o bug volta pra Triagem — não é rigor,
+        é que sem isso ninguém consegue confirmar o conserto.
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Onde acontece
+      description: produção, staging ou local; e em que módulo.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: >-
+        Contrato completo em
+        [taxonomia-de-issues.md](https://github.com/aegro/workspace/blob/dev/governance/conventions/taxonomia-de-issues.md).
