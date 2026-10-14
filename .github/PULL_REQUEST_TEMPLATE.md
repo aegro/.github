@@ -4,9 +4,10 @@
 
 ## Why
 
-<!-- Why is this change needed? Link the Jira ticket if applicable. -->
+<!-- Why is this change needed? -->
 
-**Ticket:** <!-- https://aegrodev.atlassian.net/browse/AEGRO-XXXXX -->
+<!-- "Closes <issue URL>" in this description is what links the issue to the PR and closes it on merge. -->
+Closes <!-- https://github.com/aegro/<repo>/issues/<n> -->
 
 ## How to review
 
