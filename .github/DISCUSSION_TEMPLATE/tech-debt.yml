@@ -34,8 +34,8 @@ body:
       label: Bloqueios
       description: "O que impede de resolver agora (se houver)"
   - type: input
-    id: jira
+    id: issue
     attributes:
-      label: Ticket Jira
-      description: "Ticket Jira relacionado (se houver)"
-      placeholder: "AEGRO-XXXX"
+      label: Issue relacionada
+      description: "Issue do GitHub relacionada (se houver)"
+      placeholder: "aegro/workspace#1234"
