@@ -11,8 +11,9 @@ Arquivos definidos aqui são herdados por todos os repos da org que não possuem
 | `profile/README.md` | Org profile | Vitrine pública da org no GitHub |
 | `CONTRIBUTING.md` | Contributing guide | Guia de contribuição herdado por todos os repos |
 | `.github/PULL_REQUEST_TEMPLATE.md` | PR template | Template padrão para pull requests |
-| `.github/ISSUE_TEMPLATE/bug.yml` | Issue template | Bug — tipo `Bug` |
-| `.github/ISSUE_TEMPLATE/feature.yml` | Issue template | Feature — tipo `Feature` |
+| `.github/ISSUE_TEMPLATE/defeito.yml` | Issue template | Defeito — tipo `Defeito` |
+| `.github/ISSUE_TEMPLATE/historia-tecnica.yml` | Issue template | Historia tecnica — tipo `Historia tecnica` |
+| `.github/ISSUE_TEMPLATE/tarefa.yml` | Issue template | Tarefa — tipo `Tarefa` |
 | `.github/ISSUE_TEMPLATE/config.yml` | Issue config | Links para RFC e Tech Debt via Discussions |
 | `.github/DISCUSSION_TEMPLATE/rfc.yml` | Discussion template | RFC — proposta técnica |
 | `.github/DISCUSSION_TEMPLATE/tech-debt.yml` | Discussion template | TD — dívida técnica |
@@ -25,13 +26,17 @@ Arquivos definidos aqui são herdados por todos os repos da org que não possuem
 
 ### Issue Types vs Labels
 
-Issues usam **Issue Types** nativos do GitHub (configurados no nível da organização) para definir o tipo:
+Issues usam **Issue Types** nativos do GitHub (configurados no nível da organização) para definir o tipo. Os forms daqui cobrem os três que nascem no repo do código:
 
-| Issue Type | Quando usar |
-|------------|-------------|
-| **Bug** | Algo que deveria funcionar e não funciona |
-| **Feature** | Melhoria ou capacidade nova |
-| **Task** | Trabalho operacional genérico |
+| Issue Type | Quando usar | Filha de |
+|------------|-------------|----------|
+| **Defeito** | Comportamento divergente do esperado, detectado internamente | — (raiz) |
+| **Historia tecnica** | Mudança que o usuário não vê — refactor, infra, ferramental, dívida | — (raiz) |
+| **Tarefa** | Trabalho executável numa squad | `Entrega` ou `Épico` (em `aegro/workspace`), `Defeito` ou `Historia tecnica` |
+
+Os demais types (`Entrega`, `Épico`, `Lancamento`, `Tarefa de lancamento`, `Ticket de Suporte`, `IT Help de Suporte`) nascem em `aegro/workspace`, que tem forms próprios. A árvore completa, os campos obrigatórios e onde cada type nasce estão em [taxonomia-de-issues.md](https://github.com/aegro/workspace/blob/dev/governance/conventions/taxonomia-de-issues.md).
+
+Os headings dos forms (label, `id`, ordem e obrigatoriedade) são cópia dos forms de `aegro/workspace` — ferramentas que escrevem o corpo da issue dependem deles. Mudou lá, mude aqui.
 
 **Labels** são tags transversais que complementam o tipo (`epic`, `dx`, `ci-cd`, `security`, `good first issue`).
 

@@ -1,0 +1,32 @@
+name: Historia tecnica
+description: Mudança que o usuário não vê — refactor, infra, ferramental, dívida
+type: Historia tecnica
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ### Preencha em Fields, no painel à direita →
+        > `Squad`
+
+        > [!NOTE]
+        > O repo do código é o lugar padrão da `Historia tecnica`. Só quando a mudança cruza vários
+        > repos e não tem um dono óbvio, abra em `aegro/workspace`.
+        > Ela **não tem** `Prioridade de lancamento` e **não abre** `Lancamento` — nada disso
+        > aparece para quem usa. Se a mudança passou a ter ganho perceptível, ela virou `Entrega`,
+        > que nasce em `aegro/workspace`.
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: >-
+        O que muda por dentro, por que agora e como saber que terminou. O "se vale" aqui não é
+        plano de negócio — é o que custa não fazer, que risco corre, o que fica bloqueado.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: >-
+        `Historia tecnica` é **raiz** da árvore, como `Defeito` — não é filha de `Entrega` nem de
+        `Épico`. Embaixo dela vêm as `Tarefa`. Contrato completo em
+        [taxonomia-de-issues.md](https://github.com/aegro/workspace/blob/dev/governance/conventions/taxonomia-de-issues.md).

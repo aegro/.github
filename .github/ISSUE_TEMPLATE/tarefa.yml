@@ -1,0 +1,45 @@
+name: Tarefa
+description: Trabalho executável numa squad — sempre filha de outra issue
+type: Tarefa
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ### Preencha em Fields, no painel à direita →
+        > `Squad`
+
+        > [!IMPORTANT]
+        > `Tarefa` **sempre tem pai**: `Entrega` ou `Épico` em `aegro/workspace`, ou um `Defeito` ou
+        > `Historia tecnica` (deste ou de outro repo). Depois de criar, pendure esta issue como
+        > **sub-issue** do pai — no painel **Relationships** desta issue, ou no pai, em **Create
+        > sub-issue › Add existing issue**. O campo "Épico" abaixo só registra o pai em texto; quem
+        > cria o vínculo é a sub-issue. Sem pai nenhum, o trabalho é outra coisa: `Defeito` ou
+        > `Historia tecnica` (forms deste repo) ou, se o usuário vê a mudança, `Entrega` em
+        > `aegro/workspace`.
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: O que precisa acontecer
+      description: Uma frase. O detalhe técnico vem depois.
+    validations:
+      required: true
+  - type: input
+    id: epico
+    attributes:
+      label: Épico
+      description: >-
+        A issue-pai: `Entrega` ou `Épico` em aegro/workspace (ex.: aegro/workspace#1022), ou
+        `Defeito`/`Historia tecnica` de qualquer repo (ex.: #56 ou aegro/serv-core#78).
+  - type: textarea
+    id: criterio
+    attributes:
+      label: Como saber que terminou
+      description: O que dá pra verificar quando estiver pronto.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: >-
+        Contrato completo em
+        [taxonomia-de-issues.md](https://github.com/aegro/workspace/blob/dev/governance/conventions/taxonomia-de-issues.md).
