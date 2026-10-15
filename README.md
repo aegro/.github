@@ -14,7 +14,7 @@ Arquivos definidos aqui são herdados por todos os repos da org que não possuem
 | `.github/ISSUE_TEMPLATE/defeito.yml` | Issue template | Defeito — tipo `Defeito` |
 | `.github/ISSUE_TEMPLATE/historia-tecnica.yml` | Issue template | Historia tecnica — tipo `Historia tecnica` |
 | `.github/ISSUE_TEMPLATE/tarefa.yml` | Issue template | Tarefa — tipo `Tarefa` |
-| `.github/ISSUE_TEMPLATE/config.yml` | Issue config | Links para RFC e Tech Debt via Discussions |
+| `.github/ISSUE_TEMPLATE/config.yml` | Issue config | Blank issue só para quem tem write (`blank_issues_enabled: false`) e links para RFC e Tech Debt via Discussions |
 | `.github/DISCUSSION_TEMPLATE/rfc.yml` | Discussion template | RFC — proposta técnica |
 | `.github/DISCUSSION_TEMPLATE/tech-debt.yml` | Discussion template | TD — dívida técnica |
 
@@ -23,6 +23,7 @@ Arquivos definidos aqui são herdados por todos os repos da org que não possuem
 - Repos **sem** o arquivo localmente herdam o daqui automaticamente
 - Repos **com** o arquivo local usam o seu (o global não é aplicado)
 - Para customizar num repo específico, crie o arquivo no próprio repo
+- Com `blank_issues_enabled: false`, quem tem read ou triage só vê os forms; quem tem write ou mais ainda vê a Blank issue, marcada como **Maintainers only**. Um repo que precise da Blank para todos cria o próprio `.github/ISSUE_TEMPLATE/config.yml` com `blank_issues_enabled: true` — e aí não herda **nada** da pasta `ISSUE_TEMPLATE` daqui, nem os forms (é o caso do `aegro/handbook` e do `aegro/skills`)
 
 ### Issue Types vs Labels
 
