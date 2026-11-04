@@ -1,8 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: "RFC — Proposta técnica"
-    url: https://github.com/aegro/docs/discussions/new?category=rfc
-    about: "Para propostas que precisam de discussão antes de implementar"
-  - name: "Tech Debt — Dívida técnica"
-    url: https://github.com/aegro/docs/discussions/new?category=tech-debt
-    about: "Para dívidas técnicas reconhecidas"
+  - name: "Proposta de mudança em padrão ou decisão técnica"
+    url: https://github.com/aegro/handbook/blob/dev/docs/contributing.md#decisões
+    about: "Decisão vira PR na página da regra (não há mais RFC em Discussions); dívida técnica é uma issue Historia tecnica"

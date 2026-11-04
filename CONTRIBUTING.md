@@ -10,7 +10,7 @@ Run the bootstrap script to apply the standard Git configuration:
 bash <(curl -s https://raw.githubusercontent.com/aegro/.github/dev/scripts/setup-dev.sh)
 ```
 
-This sets `dev` as the default branch and configures line ending normalization. For the full onboarding guide, see [Git Setup](https://docs.aegro.io/onboarding/git-setup).
+This sets `dev` as the default branch and configures line ending normalization. For the full onboarding guide, see [Git Setup](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/onboarding/configurar-o-git.md).
 
 ## Branches
 
@@ -71,21 +71,13 @@ We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/):
 - Fix static analysis issues **before** requesting human review
 - Use facts and data over personal preferences
 
-For the full review process, see [Code Review Guide](https://docs.aegro.io/guides/development/code-review).
+For the full review process, see [Code Review Guide](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/guias/desenvolvimento/revisao-de-codigo.md).
 
 ## Technical decisions
 
-Significant changes follow a structured process:
+There is no separate decision document. A decision that becomes a rule is a PR that changes the page where the rule lives (the PR description keeps the why, as **Antes:**/**Depois:**). A decision that only applies to one system goes to that repository's `docs/`. A big proposal that needs discussion first is a draft PR with the change, discussed in the team's channel. Recognized technical debt is a `Historia tecnica` issue in the system's repository.
 
-1. **RFC** — open a GitHub Discussion (category "RFC") to propose and discuss
-2. **ADR** — after the RFC is accepted, record the decision as an Architecture Decision Record
-3. **Tech Debt** — recognized technical debt goes into a GitHub Discussion (category "Tech Debt")
-
-Not every decision needs an RFC. Use your judgment — the bigger the impact, the more discussion it deserves. When in doubt, document it.
-
-> **Setup:** as categorias "RFC" e "Tech Debt" precisam ser criadas manualmente em cada repo (Settings → Discussions). Os templates de Discussion deste repo (`rfc.yml`, `tech-debt.yml`) são herdados automaticamente, mas só aparecem se a categoria correspondente existir.
-
-See [Technical Decisions](https://docs.aegro.io/guides/development/decisions) for the full process.
+The ADR + RFC process (GitHub Discussions in `aegro/docs`) ended on 2026-11-04. See [decisions](https://github.com/aegro/handbook/blob/dev/docs/contributing.md#decisões) in the handbook.
 
 ## Conventions
 
@@ -95,16 +87,16 @@ See [Technical Decisions](https://docs.aegro.io/guides/development/decisions) fo
 - **No commented-out code**: use version control
 - **Comments**: explain *why*, not *what*
 
-For the complete coding conventions, see [General Conventions](https://docs.aegro.io/patterns/code/conventions-general) and [Naming Conventions](https://docs.aegro.io/patterns/code/conventions-naming-complete).
+For the complete coding conventions, see [General Conventions](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/padroes/codigo/convencoes-gerais.md) and [Naming Conventions](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/padroes/codigo/nomes-por-linguagem.md).
 
 ## Useful links
 
 | Resource | Link |
 |----------|------|
-| Git & Repositories | [docs.aegro.io/patterns/repositories](https://docs.aegro.io/patterns/repositories) |
-| Branching & Merges | [docs.aegro.io/guides/development/branching-and-merges](https://docs.aegro.io/guides/development/branching-and-merges) |
-| Code Review | [docs.aegro.io/guides/development/code-review](https://docs.aegro.io/guides/development/code-review) |
-| Technical Decisions | [docs.aegro.io/guides/development/decisions](https://docs.aegro.io/guides/development/decisions) |
-| General Conventions | [docs.aegro.io/patterns/code/conventions-general](https://docs.aegro.io/patterns/code/conventions-general) |
-| Naming Conventions | [docs.aegro.io/patterns/code/conventions-naming-complete](https://docs.aegro.io/patterns/code/conventions-naming-complete) |
-| Dev Environment Setup | [docs.aegro.io/onboarding/git-setup](https://docs.aegro.io/onboarding/git-setup) |
+| Git & Repositories | [handbook](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/padroes/repositorios.md) |
+| Branching & Merges | [handbook](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/padroes/fluxo-de-branches.md) |
+| Code Review | [handbook](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/guias/desenvolvimento/revisao-de-codigo.md) |
+| Technical Decisions | [handbook](https://github.com/aegro/handbook/blob/dev/docs/contributing.md#decisões) |
+| General Conventions | [handbook](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/padroes/codigo/convencoes-gerais.md) |
+| Naming Conventions | [handbook](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/padroes/codigo/nomes-por-linguagem.md) |
+| Dev Environment Setup | [handbook](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/onboarding/configurar-o-git.md) |
