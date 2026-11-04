@@ -1,0 +1,71 @@
+# Dependencies
+node_modules/
+vendor/
+.venv/
+venv/
+env/
+
+# Build output
+dist/
+build/
+out/
+target/
+*.class
+
+# Environment
+.env
+.env.*
+.env.local
+.env.*.local
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage/
+.nyc_output/
+htmlcov/
+.coverage
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+.pytest_cache/
+.tox/
+
+# Docker
+.docker/
+
+# AI agent configs — always version-controlled (explicit negations)
+!.claude/
+!CLAUDE.md
+!.codex/
+!AGENTS.md
+!.cursor/
+!.cursorrules
+!.windsurf/
+!.windsurfrules
+!.clinerules
+!.clinerules/
+!.aider.conf.yml
+!.amazonq/
+!.augment/
+!.github/copilot-instructions.md
+!.github/instructions/
