@@ -14,9 +14,7 @@ Arquivos definidos aqui são herdados por todos os repos da org que não possuem
 | `.github/ISSUE_TEMPLATE/defeito.yml` | Issue template | Defeito — tipo `Defeito` |
 | `.github/ISSUE_TEMPLATE/historia-tecnica.yml` | Issue template | Historia tecnica — tipo `Historia tecnica` |
 | `.github/ISSUE_TEMPLATE/tarefa.yml` | Issue template | Tarefa — tipo `Tarefa` |
-| `.github/ISSUE_TEMPLATE/config.yml` | Issue config | Blank issue só para quem tem write (`blank_issues_enabled: false`) e links para RFC e Tech Debt via Discussions |
-| `.github/DISCUSSION_TEMPLATE/rfc.yml` | Discussion template | RFC — proposta técnica |
-| `.github/DISCUSSION_TEMPLATE/tech-debt.yml` | Discussion template | TD — dívida técnica |
+| `.github/ISSUE_TEMPLATE/config.yml` | Issue config | Blank issue só para quem tem write (`blank_issues_enabled: false`) e link para o processo de decisões do handbook |
 
 ## Como funciona
 
@@ -41,11 +39,9 @@ Os headings dos forms (label, `id`, ordem e obrigatoriedade) são cópia dos for
 
 **Labels** são tags transversais que complementam o tipo (`epic`, `dx`, `ci-cd`, `security`, `good first issue`).
 
-### Discussion templates
+### Decisões e dívida técnica
 
-Os templates de Discussion dependem das **categorias** estarem configuradas no repo. Se o repo não tem a categoria "RFC" ou "Tech Debt" nas Discussions, o template correspondente não aparece.
-
-Categorias são configuradas por repo (não há default global). Os 14 repos com Discussions habilitadas já possuem as categorias RFC e Tech Debt.
+Não há mais RFC nem Tech Debt em Discussions (o processo acabou em 2026-11-04). Decisão vira PR na página da regra e dívida técnica vira issue `Historia tecnica`; ver [decisões](https://github.com/aegro/handbook/blob/dev/docs/contributing.md#decisões) no handbook.
 
 ## Configuração de ambiente
 
@@ -75,8 +71,8 @@ O diretório `recommended/` contém configs de referência para novos repos:
 
 Copie para a raiz do seu repo e ajuste conforme necessário.
 
-Para o guia completo de onboarding, consulte a [documentação de configuração do Git](https://docs.aegro.io/onboarding/git-setup).
+Para o guia completo de onboarding, consulte a [documentação de configuração do Git](https://github.com/aegro/handbook/blob/dev/dept/produto/engenharia/onboarding/configurar-o-git.md).
 
 ## Referência
 
-- [Processo de Decisões Técnicas](https://docs.aegro.io/meta/decisions-process)
+- [Decisões técnicas](https://github.com/aegro/handbook/blob/dev/docs/contributing.md#decisões)
