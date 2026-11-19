@@ -15,6 +15,7 @@ Arquivos definidos aqui são herdados por todos os repos da org que não possuem
 | `.github/ISSUE_TEMPLATE/historia-tecnica.yml` | Issue template | Historia tecnica — tipo `Historia tecnica` |
 | `.github/ISSUE_TEMPLATE/tarefa.yml` | Issue template | Tarefa — tipo `Tarefa` |
 | `.github/ISSUE_TEMPLATE/config.yml` | Issue config | Blank issue só para quem tem write (`blank_issues_enabled: false`) e link para o processo de decisões do handbook |
+| `.github/workflows/pr-issue-vinculada.yml` | Reusable workflow | Confere se a PR está ligada a uma issue (Closes/Refs, branch `<type>/<n>-…` ou `Sem issue: <motivo>`). Modo `avisar` (padrão) ou `bloquear`; ativado por ruleset da org ou por `uses:` num repo |
 
 ## Como funciona
 
